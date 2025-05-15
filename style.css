@@ -21,6 +21,15 @@ header{
     width: 200px;
     height: auto;
   }
+/* style.css */
+.logo-container {
+  text-align: left; /* Aligns content to the left */
+}
+
+.logo {
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0; /* Removes any default margin */
+}
   
 
 nav ul{ 
