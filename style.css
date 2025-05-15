@@ -1,0 +1,125 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: silver;
+    background: navy;
+}
+ 
+header{
+    background:navy;
+    colour: rgba(255, 204, 0, 0.735);
+    padding: 20px 0;
+    text-align: center;
+}
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+
+nav ul{ 
+    list-style: none;
+    padding: 0 ;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(255, 204, 0, 0.735);
+    font-weight: bold;
+}
+
+#hero{
+    background: #16213e;
+    color: silver;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0f3460;
+    color: silver;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section{
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.service-list{
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li{
+    margin: 10px 0;
+}
+
+form {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #005f86;
+  }
+  
+
+form input, form textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button{
+    background: #0f3460;
+    color: silver;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+footer{
+    background: #1a1a2e;
+    color: silver;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}

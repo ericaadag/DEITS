@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers at Delali Energy Innovations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <a href="index.html">
+      <img src="logo.png" alt="Delali Logo" class="logo" />
+    </a>
+    <h2>Join Our Team</h2>
+  </div>
+
+  <div class="careers">
+    <p>We’re hiring bold thinkers to help shape the future of energy, AI, and finance. Apply below or send your CV to <a href="mailto:careers@delalienergy.com">careers@delalienergy.com</a>.</p>
+
+    <h3>Open Positions</h3>
+    <ul>
+      <li><strong>AI Systems Engineer</strong> – Remote</li>
+      <li><strong>Energy Platform Developer</strong> – Ghana/U.S., Hybrid</li>
+      <li><strong>Financial Security Analyst</strong> – Remote</li>
+    </ul>
+
+    <hr />
+
+    <h3>Application Form</h3>
+    <form id="jobForm" enctype="multipart/form-data">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="position">Position Applying For:</label><br />
+      <select id="position" name="position" required>
+        <option value="">Select...</option>
+        <option value="AI Systems Engineer">AI Systems Engineer</option>
+        <option value="Energy Platform Developer">Energy Platform Developer</option>
+        <option value="Financial Security Analyst">Financial Security Analyst</option>
+      </select><br />
+
+      <label for="cv">Upload Your CV (PDF):</label><br />
+      <input type="file" id="cv" name="cv" accept=".pdf" required /><br /><br />
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <p id="formMessage" style="margin-top: 10px;"></p>
+
+    <br />
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    // Simulated form handling (for now)
+    document.getElementById("jobForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const position = document.getElementById("position").value;
+      document.getElementById("formMessage").innerText = `Thank you, ${name}. Your application for "${position}" has been received.`;
+      document.getElementById("jobForm").reset();
+    });
+  </script>
+</body>
+</html>
